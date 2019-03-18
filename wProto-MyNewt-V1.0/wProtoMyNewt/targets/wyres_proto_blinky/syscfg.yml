@@ -1,0 +1,26 @@
+syscfg.defs:
+        LORAWAN_REGION:
+                description: 'lorawan EU'
+                value: LORAWAN_REGION_EU868
+
+syscfg.vals:
+        LORAWAN_REGION_EU868: 1
+        LORAWAN_REGION_US915: 0
+        LORAWAN_ACTIVATION_ABP: 0
+        LORAWAN_ACTIVATION_OTAA: 1
+        LORAWAN_SE_SOFT: 1
+        SPI_0_MASTER: 0
+        SPI_0_MASTER_PIN_SCK: PA_5 #PA5
+        SPI_0_MASTER_PIN_MOSI: PA_7 #PA7
+        SPI_0_MASTER_PIN_MISO: PA_6 #PA6
+# Radio pinout for the SX1272 hat
+        SX1272: 1
+        SX1272_DIO_0: PB_1 #PB1
+        SX1272_DIO_1: PB_10 #PB10
+        SX1272_DIO_2: PB_11 #PB11
+        SX1272_DIO_3: PB_7 #PB7
+        SX1272_DIO_4: PB_5 #PB5
+        SX1272_DIO_5: PB_4  #PB4
+        SX1272_NSS: PB_0 #PB0
+        SX1272_SPI: 1
+        SX1272_RESET: PA_2 #PA2

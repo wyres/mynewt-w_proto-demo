@@ -1,0 +1,37 @@
+#
+# Kerlink (support@kerlink.com)
+#
+syscfg.defs:
+    RX_THREAD_PRIORITY:
+        description: 'Priority of the rx_thread task'
+        value: 101
+    RX_THREAD_STACK_SIZE:
+        description: 'Stack size of the rx_thread task'
+        value: (OS_STACK_ALIGN(256))
+    TX_THREAD_PRIORITY:
+        description: 'Priority of the tx_thread task'
+        value: 100
+    TX_THREAD_STACK_SIZE:
+        description: 'Stack size of the tx_thread task'
+        value: (OS_STACK_ALIGN(256))
+
+    LORAWAN_ACTIVATION_ABP:
+        description: 'Use the LoRaWAN application in ABP mode'
+        value: 0
+        restrictions:
+            - "!LORAWAN_ACTIVATION_OTAA"
+    LORAWAN_ACTIVATION_OTAA:
+        description: 'Use the LoRaWAN application in OTAA mode'
+        value: 1
+        restrictions:
+            - "!LORAWAN_ACTIVATION_ABP"
+    LORAWAN_ADR_ENABLE:
+        description: 'Use the LoRaWAN ADR mechanism'
+        value: 0
+    LORAWAN_CERTIF_ENABLE:
+        description: 'Integrate the certification mode'
+        value: 0
+
+syscfg.vals:
+    OS_MAIN_STACK_SIZE: 256
+    LORAWAN_API_DEFAULT_DR: DR_0
