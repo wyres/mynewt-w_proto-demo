@@ -30,4 +30,3 @@ pkg.deps:
     - "@apache-mynewt-core/sys/console/stub"
     - "@apache-mynewt-core/sys/log/stub" 
     - "@mcuboot/boot/bootutil"
-    #- "@lorawan/lorawan_api"
